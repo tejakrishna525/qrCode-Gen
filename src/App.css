@@ -1,0 +1,24 @@
+/* App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  background-image: linear-gradient(to bottom, #f0f2f5, #a1c4fd);
+  /* Ensure the .App div takes the full height of the viewport for the gradient to cover completely */
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: block;
+}
+
+/* Add this in your global CSS file if you're not using Tailwind JIT mode for arbitrary values */
+.sprite {
+  width: 32px; /* Width of a frame */
+  height: 40px; /* Height of a frame */
+  background-image: url('https://www.qrcode-monkey.com/img/qr/spritesheet.png');
+  background-repeat: no-repeat;
+}
+
